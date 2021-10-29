@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --black: #1A0D1C;
+    --red: #F25056;
+    --green: #84FA88;
+    --button: #1A0D1C;
+    --white: #f9f9f9;
+    --yellow: #FAC02C;
+}
+
+body {
+    color: var(--black);
+    background: var(--black);
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    background: #fdfbfb;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+
+    width: 20%;
+    padding: 2rem 0;
+    margin-top: 5rem;
+    border-radius: .5rem;
+}
+
+.content h1 {
+    font-size: 3rem;
+    font-weight: 100;
+}
+
+.content main h1 {
+   display: flex;
+   justify-content: center;
+   font-weight: 700;
+}
+
+.content main input {
+    color:var(--white);
+    background: var(--button);
+    padding: .5rem 1rem;
+    border: none;
+    border-radius: .5rem;
+    margin-top: .8rem;
+    margin-left: .5rem;
+    transition: all 200ms;
+    
+}
+
+.content main input#pause {
+    border: 2px solid var(--button);
+    background: none;
+    color: var(--button);
+    font-weight: 700;
+    opacity: .5;
+}
+
+.content main input#start:hover {
+    background: var(--green);
+    color: var(--button);
+}
+
+.content main input#pause:hover {
+    opacity: 1;
+    color: var(--red);
+    border: solid 2px var(--red);
+}
+
+.content main input#restart:hover {
+    background: var(--yellow);
+    color: var(--button);
+}
+
+.content main input#restart:focus {
+    background: var(--yellow);
+    color: var(--button);
+}
+
+.content main input#pause:focus {
+    opacity: 1;
+    color: var(--red);
+    border: solid 2px var(--red);
+}
+
+.content main input#start:focus {
+    background: var(--green);
+    color: var(--button);
+}
+
+.pause {
+    color: var(--red);
+}
