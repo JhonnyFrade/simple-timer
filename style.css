@@ -22,7 +22,7 @@ body {
 }
 
 .content {
-    background: #fdfbfb;
+    background: var(--white);
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -54,7 +54,6 @@ body {
     margin-top: .8rem;
     margin-left: .5rem;
     transition: all 200ms;
-    
 }
 
 .content main input#pause {
@@ -81,20 +80,10 @@ body {
     color: var(--button);
 }
 
-.content main input#restart:focus {
-    background: var(--yellow);
-    color: var(--button);
-}
-
 .content main input#pause:focus {
     opacity: 1;
     color: var(--red);
     border: solid 2px var(--red);
-}
-
-.content main input#start:focus {
-    background: var(--green);
-    color: var(--button);
 }
 
 .pause {

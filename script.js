@@ -10,8 +10,8 @@ function getTime(sec) {
     return date.toLocaleTimeString('pt-BR', {
         hour12: false,
         timeZone: 'UTC' 
-    }) 
-}
+    });
+};
 
 function startTimer() {
     timer = setInterval(function() {
@@ -38,3 +38,4 @@ restart.addEventListener('click', function() {
     sec = 0;
     startTimer();
 });
+
